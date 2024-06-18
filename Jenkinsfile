@@ -5,7 +5,7 @@ pipeline {
         jdk 'jdk8'
     }
     environment{
-        buildTag=${BUILD_NUMBER}
+        buildTag="${BUILD_NUMBER}"
     }
     stages{
         stage("Compile project"){
