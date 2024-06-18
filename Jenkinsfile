@@ -12,7 +12,7 @@ pipeline {
             steps{ sh "mvn test" }
         }
         stage("Build Project"){
-            steps{ sh "mvn clean install" }
+            steps{ sh "mvn install" }
         }
         stage("Build Docker Image"){ 
             steps{
